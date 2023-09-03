@@ -1,0 +1,20 @@
+# Run static code analysis for C and C++ code using cppcheck
+
+name: Static code analysis
+
+# When to run the workflow
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+    check:
+        # Set the running environment
+        runs-on: ubuntu-latest
+
+        # Steps to run in the job
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v2
+            - name: Install cppcheck
+              run: sudo apt-get install cppcheck
+            - name: Run cppcheck
+              run: find -P . -type 'f' -name '*.[ch]' -exec cppcheck --enable=all --inconclusive --std=c++17 --suppress=unmatchedSuppression '{}' \;
