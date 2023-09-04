@@ -1,6 +1,8 @@
 # C_Playground
 
-Welcome to the C Playground repository! 🎉 This is a curated collection of small, valuable, and interesting C projects that might not warrant individual repositories but are still valuable and interesting to keep.
+Welcome to the C Playground repository! 🎉 This is a curated collection of
+small, valuable, and interesting C projects that might not warrant individual
+repositories but are still valuable and interesting to keep.
 
 - [Introduction](#introduction)
 - [Projects](#projects)
@@ -16,7 +18,12 @@ here in the C Playground.
 
 ## Projects
 
-- **CLI App Framework:** This project is a collection of C code that provides a versatile framework for constructing command-line interface applications in C. It leverages the CMake build system for seamless integration and utilizes the argparse argument parsing library for easy and efficient command-line argument handling. This framework simplifies the development process, making it easier to create robust and user-friendly command-line applications in C.
+- **CLI App Framework:** This project is a collection of C code that provides a
+versatile framework for constructing command-line interface applications in C.
+It leverages the CMake build system for seamless integration and utilizes the
+argparse argument parsing library for easy and efficient command-line argument
+handling. This framework simplifies the development process, making it easier to
+create robust and user-friendly command-line applications in C.
 
 ## Getting Started
 
