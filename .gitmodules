@@ -1,0 +1,6 @@
+[submodule "CLI App Framework/extern/argparse"]
+	path = CLI App Framework/extern/argparse
+	url = https://github.com/cofyc/argparse.git
+[submodule "CLI App Framework/extern/gsl"]
+	path = CLI App Framework/extern/gsl
+	url = https://github.com/ampl/gsl.git
