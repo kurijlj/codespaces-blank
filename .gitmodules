@@ -4,3 +4,12 @@
 [submodule "CLI App Framework/extern/gsl"]
 	path = CLI App Framework/extern/gsl
 	url = https://github.com/ampl/gsl.git
+[submodule "TIFF IO Framework/extern/argparse"]
+	path = TIFF IO Framework/extern/argparse
+	url = https://github.com/cofyc/argparse.git
+[submodule "TIFF IO Framework/extern/gsl"]
+	path = TIFF IO Framework/extern/gsl
+	url = https://github.com/ampl/gsl.git
+[submodule "TIFF IO Framework/extern/libtiff"]
+	path = TIFF IO Framework/extern/libtiff
+	url = https://gitlab.com/libtiff/libtiff.git
