@@ -27,5 +27,5 @@ target_link_libraries (
     LINK_PRIVATE
     argparse
     gsl
-    libtiff
+    tiff
     )
