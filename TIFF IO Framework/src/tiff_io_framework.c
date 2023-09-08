@@ -156,7 +156,7 @@ int main(int argc, char **argv) {
         OPT_STRING(
                    'r',
                    "read-from-file",
-                   in_file,
+                   &in_file,
                    "TIFF file to read from",
                    NULL,
                    0,
@@ -165,7 +165,7 @@ int main(int argc, char **argv) {
         OPT_STRING(
                    'w',
                    "write-to-file",
-                   out_file,
+                   &out_file,
                    "TIFF file to write to",
                    NULL,
                    0,
@@ -213,7 +213,7 @@ int main(int argc, char **argv) {
 
     old_error_handler = TIFFSetErrorHandler(custom_error_handler);
 
-    if (argc != 0 && NULL != in_file) {
+    if (NULL != in_file) {
         TIFFOpenOptions *opts = TIFFOpenOptionsAlloc();
         if (NULL == opts) {
             status = EXIT_FAILURE;
@@ -226,7 +226,7 @@ int main(int argc, char **argv) {
 
         }
 
-    } else if (argc != 0 && NULL != out_file) {
+    } else if (NULL != out_file) {
         TIFFOpenOptions *opts = TIFFOpenOptionsAlloc();
         if (NULL == opts) {
             status = EXIT_FAILURE;
