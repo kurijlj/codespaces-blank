@@ -357,7 +357,6 @@ static int version_info(struct argparse *self,
 
 }
 
-
 static void custom_error_handler(const char *module,
         const char *fmt, va_list ap)
 {
